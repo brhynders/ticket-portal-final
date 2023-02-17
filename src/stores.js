@@ -4,4 +4,5 @@ import { writable } from "svelte/store";
 export const pb = new Pocketbase("https://tickets.elegantwebcreations.com");
 
 export const unCompletedTickets = writable();
+export const completedTickets = writable();
 export const deleteModal = writable(false);

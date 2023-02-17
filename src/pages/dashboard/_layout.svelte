@@ -36,7 +36,7 @@
     </header>
 
     <main
-      class="container w-full mx-auto pt-10 flex-grow px-4 md:px-0 md:mt-8 text-gray-800 leading-normal"
+      class="container w-full mx-auto py-12 flex-grow px-4 text-gray-800 leading-normal"
     >
       <Userbox />
       <div class="mt-12"><slot /></div>

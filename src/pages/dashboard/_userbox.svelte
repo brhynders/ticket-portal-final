@@ -19,7 +19,8 @@
       {#await submittedTickets}
         Loading...
       {:then { totalItems }}
-        {totalItems} of {pb.authStore.model.tickets_per_month} tickets remaining
+        {pb.authStore.model.tickets_per_month - totalItems} of {pb.authStore
+          .model.tickets_per_month} tickets remaining
       {/await}
     </h5>
   </div>

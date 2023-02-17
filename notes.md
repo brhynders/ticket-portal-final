@@ -7,3 +7,7 @@ x Dashboard layout
 - Edit ticket page
 - View ticket page
 - Responsive
+
+## Phase 2
+
+- Subscribe to ticket_opened status and disable delete button based on it
