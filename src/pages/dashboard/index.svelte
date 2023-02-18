@@ -64,7 +64,7 @@
             <div
               class="inline-flex items-center justify-center w-6 h-6 text-sm font-bold text-white bg-slate-600 rounded-full"
             >
-              {#if item.expand["new_ticket_items(ticket_id"]}
+              {#if item.expand["new_ticket_items(ticket_id)"]}
                 {item.expand["new_ticket_items(ticket_id)"].length}
               {:else}
                 0
@@ -78,7 +78,7 @@
             <div
               class="inline-flex items-center justify-center w-6 h-6 text-sm font-bold text-white bg-slate-600 rounded-full"
             >
-              {#if item.expand["new_ticket_comments(ticket"]}
+              {#if item.expand["new_ticket_comments(ticket)"]}
                 {item.expand["new_ticket_comments(ticket)"].length}
               {:else}
                 0
@@ -139,7 +139,7 @@
             <div
               class="inline-flex items-center justify-center w-6 h-6 text-sm font-bold text-white bg-slate-600 rounded-full"
             >
-              {#if item.expand["new_ticket_items(ticket_id"]}
+              {#if item.expand["new_ticket_items(ticket_id)"]}
                 {item.expand["new_ticket_items(ticket_id)"].length}
               {:else}
                 0
@@ -153,7 +153,7 @@
             <div
               class="inline-flex items-center justify-center w-6 h-6 text-sm font-bold text-white bg-slate-600 rounded-full"
             >
-              {#if item.expand["new_ticket_comments(ticket"]}
+              {#if item.expand["new_ticket_comments(ticket)"]}
                 {item.expand["new_ticket_comments(ticket)"].length}
               {:else}
                 0
