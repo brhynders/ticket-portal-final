@@ -1,6 +1,7 @@
 <script>
   import { goto } from "@roxi/routify";
   import { pb } from "../../stores";
+  import { BaseTransition } from "@roxi/routify/decorators";
   import Userbox from "./_userbox.svelte";
   const logout = () => {
     pb.authStore.clear();

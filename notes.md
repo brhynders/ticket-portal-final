@@ -2,11 +2,12 @@
 
 x Login page
 x Dashboard layout
+x Tickets page
 
-- Tickets page
-- Edit ticket page
 - View ticket page
+- Pagination for ticket page
 - Responsive
+- Admin features
 
 ## Phase 2
 

@@ -88,7 +88,7 @@
           <hr class="mt-6 mb-3" />
           <div class="flex items-center gap-2">
             <button
-              on:click={() => $goto(`/dashboard/ticket-${item.id}`)}
+              on:click={() => $goto(`/dashboard/ticket/${item.id}`)}
               class="py-1 px-3 rounded-md text-sm font-bolder shadow bg-blue-500 text-white hover:bg-blue-600"
               >View Ticket</button
             >
@@ -107,13 +107,13 @@
   {/await}
 </div>
 <!-- Completed Tickets -->
-<h3 class="text-gray-600 font-bold text-sm  mt-10 mb-3">Completed Tickets</h3>
+<h3 class="text-gray-600 font-bold text-sm mt-10 mb-3">Completed Tickets</h3>
 {#await $completedTickets}
   <div class="p-3">Loading...</div>
   Loading
 {:then { items, totalPages }}
   {#if items.length === 0}
-    <div class="p-3">No completed tickets</div>
+    No completed tickets
   {:else}
     <div class="w-full grid grid-cols-4 gap-3">
       {#each items as item}
@@ -163,7 +163,7 @@
           <hr class="mt-6 mb-3" />
           <div class="flex items-center gap-2">
             <button
-              on:click={() => $goto(`/dashboard/ticket-${item.id}`)}
+              on:click={() => $goto(`/dashboard/ticket/${item.id}`)}
               class="py-1 px-3 rounded-md text-sm font-bolder shadow bg-blue-500 text-white hover:bg-blue-600"
               >View Ticket</button
             >
