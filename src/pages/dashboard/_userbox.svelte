@@ -27,8 +27,6 @@
   <button
     on:click={() => $goto("/dashboard/new-ticket")}
     class="bg-blue-500 inline-block px-6 flex items-center justify-center py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
-    type="button"
-    data-mdb-ripple="true"
-    data-mdb-ripple-color="light">New Ticket</button
+    type="button">New Ticket</button
   >
 </div>

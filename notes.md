@@ -5,9 +5,10 @@ x Dashboard layout
 x Tickets page
 
 - View ticket page
-- Pagination for ticket page
-- Responsive
+- New ticket page
+- Pagination for tickets page
 - Admin features
+- Responsive
 
 ## Phase 2
 

@@ -1,6 +1,8 @@
 <script>
   import { pb } from "../../../stores";
   import Metabar from "./_metabar.svelte";
+  import TicketComment from "./_ticketComment.svelte";
+  import TicketItem from "./_ticketItem.svelte";
 
   export let ticketId;
 
@@ -17,11 +19,17 @@
     <div class="bg-white shadow border rounded-md min-h-[500px] p-6">
       <h3 class="font-bold text-sm text-gray-500 mb-10">Ticket Items</h3>
       {#each ticket.expand["new_ticket_items(ticket_id)"] as item}
-        {item.item_description}
+        <TicketItem {item} />
       {/each}
     </div>
     <div class="bg-white shadow border rounded-md min-h-[500px] p-6">
       <h3 class="font-bold text-sm text-gray-500 mb-10">Ticket Comments</h3>
+      {#if ticket.expand["new_ticket_comments(ticket)"]}
+        {#each ticket.expand["new_ticket_comments(ticket)"] as comment}
+          <TicketComment {comment} />
+        {/each}
+      {:else}
+        No comments currently{/if}
     </div>
   </section>
 {/await}
